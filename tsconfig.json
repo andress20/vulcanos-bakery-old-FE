@@ -1,5 +1,22 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@comp/*": ["src/components/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@molecules/*": ["src/components/molecules/*"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@util/*": ["src/utilities/*"],
+      "@def/*": ["src/definitions/*"],
+      "@services/*": ["src/services/*"],
+      "@hook/*": ["src/hooks/*"],
+      "@redux/*": ["src/redux/*"],
+      "@theme/*": ["src/themes/*"],
+      "@layout/*": ["src/layouts/*"],
+      "@data/*": ["src/data/*"],
+      "@tests/*": ["src/tests/*"],
+      "@src/*": ["src/*"]
+    },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,

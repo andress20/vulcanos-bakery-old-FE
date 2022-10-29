@@ -3,25 +3,42 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev2": "npm run open-browser && next dev",
-    "open-browser": "start http://localhost:3000",
+    "dev": "npm run open-browser && next dev",
+    "open-browser": "open http://localhost:3000",
     "build": "next build",
-    "start": "next start -p ${PORT: 3000}",
+    "start": "next start -p 3000",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@material-ui/core": "^5.0.0-beta.5",
+    "@mui/material": "^5.10.5",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@material-ui/styles": "^4.11.5",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/react": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
     "@types/node": "18.7.18",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
+    "babel-loader": "^8.2.5",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
+    "eslint-plugin-storybook": "^0.6.6",
     "typescript": "4.8.3"
   }
 }
