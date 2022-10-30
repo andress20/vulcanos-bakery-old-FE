@@ -6,7 +6,7 @@
     "dev": "npm run open-browser && next dev",
     "open-browser": "open http://localhost:3000",
     "build": "next build",
-    "start": "next start -p 3000",
+    "start": "next start -p ${PORT:=3000}",
     "lint": "next lint",
     "format": "prettier --write .",
     "build-storybook": "build-storybook",
