@@ -16,15 +16,17 @@ const Home: NextPage = () => {
   }
   return (
     <>
-      <Typography variant="h1" color="primary" align="center">
-        Vulcano's Bakery
-      </Typography>
-      <div style={{ margin: 'auto', width: '5%' }}>
-        <Button variant="contained" onClick={handleClick}>
-          Pedidos
-        </Button>
+      <div style={{ marginTop: '50px' }}>
+        <Typography variant="h1" color="primary" align="center">
+          Vulcano's Bakery
+        </Typography>
+        <div style={{ margin: 'auto', width: '5%' }}>
+          <Button variant="contained" onClick={handleClick}>
+            Pedidos
+          </Button>
+        </div>
+        <SignIn />
       </div>
-      <SignIn />
     </>
   )
 }
