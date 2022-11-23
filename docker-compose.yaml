@@ -6,3 +6,8 @@ services:
       - ./mongo/:/data/db/
     ports:
       - 27017:27017
+  vulcanosBackend:
+    image: vulcanos-backend
+    container_name: vulcanos-backend-service
+    ports:
+      - 8000:8000
