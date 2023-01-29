@@ -1,7 +1,7 @@
 services:
   vulcanosBakeryShop:
     image: mongo:5.0.0
-    container_name: vulcanos-database
+    container_name: vulcanosDB
     volumes:
       - ./mongo/:/data/db/
     ports:
