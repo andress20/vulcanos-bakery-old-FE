@@ -1,61 +1,30 @@
-# Next.js Vulcanos Pedidos
+# Next.js Vulcanos WEB
 
-Parra correr localmente, se necesita la base de datos del
+How Docker works:
+
+1. Create Images using `docker build . -t` command (this reads Dockerfile and generate the image)
+2. You can either create containers individualy or use Docker-compose to create and wrap all images at once
+
+To run locally, All 3 images must be already created. Recommended run `Docker-compose` in order to create a container
+with all of them wrapped
 
 ```
 docker-compose up -d
 ```
 
-- El -d, es **detached** (para que el comando no se quede pegado en consola)
+- argument -d means **detached** releases the console
 
-- MondoDB URL local
+## Environment variables setup
 
-```
-mongodb://localhost:27017/vulcanos-database
-```
-
-Back URL
-
-```
-https://vulcanos-backend.onrender.com
-```
-
-## Configurar variables de entorno
-
-Renombrar el archivo **.env.template** a **.env**
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Rename file **.env.template** to **.env**
 
 ## Getting Started
-
-First, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as
-[API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions
-are welcome!
 
 ## Deploy on Vercel
 

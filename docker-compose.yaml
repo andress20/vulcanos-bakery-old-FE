@@ -1,5 +1,5 @@
 services:
-  vulcanosDB:
+  vulcanosBakeryShop:
     image: mongo:5.0.0
     container_name: vulcanos-database
     volumes:
@@ -7,7 +7,12 @@ services:
     ports:
       - 27017:27017
   vulcanosBackend:
-    image: vulcanos-backend
-    container_name: vulcanos-backend-service
+    image: vulcanos-backend-image
+    container_name: vulcanos-backend-container
     ports:
       - 8000:8000
+  vulcanosFrontend:
+    image: vulcanos-frontend-image
+    container_name: vulcanos-frontend-container
+    ports:
+      - 3000:3000
