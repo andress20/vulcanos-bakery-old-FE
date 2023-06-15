@@ -10,7 +10,6 @@ import Grid from '@mui/material/Grid'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Container from '@mui/material/Container'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 function Copyright(props: any) {
   return (
@@ -25,8 +24,6 @@ function Copyright(props: any) {
   )
 }
 
-const theme = createTheme()
-
 export default function SignIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -38,7 +35,6 @@ export default function SignIn() {
   }
 
   return (
-    // <ThemeProvider theme={theme}>
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <Box
@@ -94,6 +90,5 @@ export default function SignIn() {
       </Box>
       <Copyright sx={{ mt: 8, mb: 4 }} />
     </Container>
-    // </ThemeProvider>
   )
 }
